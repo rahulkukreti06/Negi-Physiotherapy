@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./services.css";
 import './App.css';
 import './script.js';
@@ -12,6 +12,16 @@ const imageModules = import.meta.glob('./images/*', {
 const imageSrc = (fileName) => imageModules[`./images/${fileName}`];
 
 export default function ServicesPage() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen((prev) => !prev);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   useEffect(() => {
     const header = document.getElementById('header');
     const utilityButtons = document.getElementById('utilityButtons');
@@ -122,7 +132,11 @@ export default function ServicesPage() {
               Book Now
             </a>
 
-            <div className="hamburger">
+            <div
+              className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}
+              onClick={toggleMobileMenu}
+              style={{ cursor: 'pointer' }}
+            >
               <span></span>
 
               <span></span>
@@ -132,30 +146,30 @@ export default function ServicesPage() {
           </div>
         </div>
 
-        <div className="mobile-menu">
+        <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`} style={{ display: isMobileMenuOpen ? 'block' : 'none' }}>
           <ul className="mobile-nav-links">
             <li>
-              <a href="/">Home</a>
+              <a href="/" onClick={closeMobileMenu}>Home</a>
             </li>
 
             <li>
-              <a href="/services">Services</a>
+              <a href="/services" onClick={closeMobileMenu}>Services</a>
             </li>
 
             <li>
-              <a href="/about">About Us</a>
+              <a href="/about" onClick={closeMobileMenu}>About Us</a>
             </li>
 
             <li>
-              <a href="/contact">Contact</a>
+              <a href="/contact" onClick={closeMobileMenu}>Contact</a>
             </li>
 
             <li>
-              <a href="/blog">Blog</a>
+              <a href="/blog" onClick={closeMobileMenu}>Blog</a>
             </li>
 
             <li>
-              <a href="/#contact" className="book-now-btn mobile-book-btn">
+              <a href="/contact" className="book-now-btn mobile-book-btn" onClick={closeMobileMenu}>
                 Book Now
               </a>
             </li>
