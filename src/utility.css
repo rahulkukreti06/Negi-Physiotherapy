@@ -1,0 +1,94 @@
+/* Utility Buttons - Scroll to Top & WhatsApp */
+.utility-buttons {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.utility-buttons.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #2E2214;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+  transform: translateY(-3px);
+}
+
+.scroll-top-btn svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.scroll-top-btn:hover svg {
+  transform: translateY(-2px);
+}
+
+.whatsapp-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+}
+
+.whatsapp-btn svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .utility-buttons {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .scroll-top-btn,
+  .whatsapp-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .scroll-top-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .whatsapp-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,362 @@
+ .abt-page {
+      --ink:      #0E1C19;
+      --panel:    #16302B;
+      --brass:    #C9A24B;
+      --brass-lt: #E2C07A;
+      --paper:    #F4F1E9;
+      --white:    #FFFFFF;
+      --teal:     #1A7060;
+      --teal-lt:  #23967C;
+      --muted:    #5A7A74;
+      --border:   rgba(14,28,25,0.07);
+      --shadow:   0 4px 24px rgba(14,28,25,0.09);
+      --shadow-lg:0 16px 56px rgba(14,28,25,0.14);
+      --radius:   18px;
+      font-family: 'Inter', sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+    }
+    .abt-page * { box-sizing: border-box; margin: 0; padding: 0; }
+    .abt-page section { width: 100%; }
+    .abt-page .container { max-width: 1160px; margin: 0 auto; margin-top:50px;  padding: 0 28px; }
+ 
+    /* ── SHARED LABELS ── */
+    .abt-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 700; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--brass); margin-bottom: 12px;
+    }
+    .abt-label::before { content: ''; width: 20px; height: 2px; background: var(--brass); border-radius: 2px; }
+    .abt-label.light { color: var(--brass-lt); }
+    .abt-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(26px, 3.8vw, 42px);
+      font-weight: 500; line-height: 1.12;
+      letter-spacing: -.02em; margin-bottom: 16px; color: #242323;
+    }
+    .abt-title.light { color: #242323; }
+    .abt-sub { font-size: 15px; color: var(--muted); line-height: 1.7; }
+    .abt-sub.light { color: rgba(244,241,233,.62); }
+ 
+    /* ════════════════════════════════
+       HERO
+    ════════════════════════════════ */
+    .abt-hero {
+      background: var(--panel);
+      padding: 100px 0 88px;
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .abt-hero::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 55% 50% at 15% 65%, rgba(201,162,75,.10) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 55% at 85% 25%, rgba(26,112,96,.22) 0%, transparent 70%);
+    }
+    .abt-hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Space Grotesk', sans-serif; font-size: 12px;
+      font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--brass); background: rgba(201,162,75,.12);
+      border: 1px solid rgba(201,162,75,.28);
+      padding: 6px 18px; border-radius: 100px; margin-bottom: 26px;
+    }
+    .abt-hero-eyebrow span { width: 6px; height: 6px; border-radius: 50%; background: var(--brass); display: inline-block; }
+    .abt-hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(40px, 5.5vw, 68px);
+      font-weight: 700; color: var(--white);
+      line-height: 1.08; letter-spacing: -.025em; margin-bottom: 20px;
+    }
+    .abt-hero h1 em { font-style: normal; color: var(--brass); }
+    .abt-hero p {
+      font-size: 17px; color: rgba(244,241,233,.66);
+      max-width: 540px; margin: 0 auto 52px; line-height: 1.72;
+    }
+    .abt-hero-stats {
+      display: flex; justify-content: center;
+      gap: 56px; flex-wrap: wrap;
+      padding-top: 48px;
+      border-top: 1px solid rgba(201,162,75,.18);
+    }
+    .abt-hero-stat strong {
+      display: block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 34px; font-weight: 700;
+      color: var(--brass); line-height: 1; margin-bottom: 5px;
+    }
+    .abt-hero-stat span { font-size: 13px; color: rgba(244,241,233,.48); }
+ 
+    /* ════════════════════════════════
+       ABOUT THE CLINIC
+    ════════════════════════════════ */
+    .abt-clinic { padding: 96px 0; background: white; }
+    .abt-split {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 72px; align-items: center;
+    }
+    .abt-split.reverse { direction: rtl; }
+    .abt-split.reverse > * { direction: ltr; }
+ 
+    /* image side */
+    .abt-img-wrap { position: relative; }
+    .abt-img-main {
+      width: 100%; aspect-ratio: 4/3;
+      border-radius: var(--radius);
+      overflow: hidden; position: relative;
+    }
+    .abt-img-main img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .abt-img-accent {
+      position: absolute;
+      bottom: -28px; right: -28px;
+      width: 48%; aspect-ratio: 1;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 5px solid var(--paper);
+      box-shadow: var(--shadow-lg);
+    }
+    .abt-img-accent img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .abt-img-badge {
+      position: absolute; top: 24px; left: 24px;
+      background: var(--brass); color: var(--ink);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 11px; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; padding: 6px 14px; border-radius: 100px;
+    }
+    .abt-img-floatcard {
+      position: absolute; bottom: 20px; left: -28px;
+      background: var(--white);
+      border-radius: 14px;
+      padding: 16px 20px;
+      box-shadow: var(--shadow-lg);
+      display: flex; align-items: center; gap: 14px;
+      min-width: 200px;
+    }
+    .abt-floatcard-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: linear-gradient(135deg, var(--panel), var(--teal));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
+    }
+    .abt-floatcard-icon.brass { background: linear-gradient(135deg, #5A3A0A, #C9A24B); }
+    .abt-floatcard-text strong {
+      display: block; font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px; font-weight: 700; color: var(--ink); line-height: 1;
+    }
+    .abt-floatcard-text span { font-size: 12px; color: var(--muted); }
+ 
+    /* text side */
+    .abt-text-side { display: flex; flex-direction: column; gap: 0; }
+    .abt-text-side p {
+      font-size: 15px; color: #99939B;
+      line-height: 1.8; margin-bottom: 18px;
+    }
+    .abt-pillars {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 14px; margin-top: 12px;
+    }
+    .abt-pillar {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px; padding: 18px 18px 20px;
+      box-shadow: var(--shadow);
+    }
+    .abt-pillar-icon {
+      font-size: 22px; margin-bottom: 10px; display: block;
+    }
+    .abt-pillar strong {
+      display: block; font-family: 'Space Grotesk', sans-serif;
+      font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 4px;
+    }
+    .abt-pillar span { font-size: 12.5px; color: var(--muted); line-height: 1.5; }
+ 
+    /* ════════════════════════════════
+       MEET THE DOCTOR
+    ════════════════════════════════ */
+    .abt-doctor { padding: 96px 0; background: #F4F1E9; position: relative; overflow: hidden; }
+    .abt-doctor::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 50% 60% at 0% 50%, rgba(201,162,75,.08) 0%, transparent 65%),
+        radial-gradient(ellipse 40% 50% at 100% 50%, rgba(26,112,96,.15) 0%, transparent 65%);
+    }
+ 
+    .abt-doctor-split {
+      display: grid; grid-template-columns: 420px 1fr;
+      gap: 72px; align-items: start;
+    }
+ 
+    /* doctor photo side */
+    .abt-doc-photo-wrap { position: relative; }
+    .abt-doc-photo {
+      width: 100%; aspect-ratio: 3/4;
+      border-radius: var(--radius); overflow: hidden;
+      border: 1px solid rgba(201,162,75,.15);
+    }
+    .abt-doc-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+    .abt-doc-photo-ph {
+      width: 100%; height: 100%;
+      background: linear-gradient(160deg, #0B2620 0%, #1A5448 60%, #2D7A65 100%);
+      display: flex; align-items: center; justify-content: center; font-size: 96px;
+    }
+    .abt-doc-cred-card {
+      position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%);
+      background: var(--brass);
+      border-radius: 14px; padding: 18px 28px;
+      text-align: center; min-width: 260px;
+      box-shadow: 0 12px 40px rgba(201,162,75,.35);
+    }
+    .abt-doc-cred-card strong {
+      display: block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 17px; font-weight: 700; color: var(--ink); margin-bottom: 3px;
+    }
+    .abt-doc-cred-card span { font-size: 12px; color: rgba(14,28,25,.65); }
+ 
+    /* doctor info side */
+    .abt-doc-info { padding-top: 8px; }
+    .abt-doc-info p {
+      font-size: 15px; color: #6d6d6d;
+      line-height: 1.8; margin-bottom: 20px;
+    }
+    .abt-doc-stats {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 14px; margin: 28px 0;
+    }
+    .abt-doc-stat {
+      background: rgb(135 132 132 / 17%);
+      border: 1px solid rgba(201,162,75,.15);
+      border-radius: 12px; padding: 20px 20px 22px;
+    }
+    .abt-doc-stat strong {
+      display: block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 28px; font-weight: 700; color: var(--brass);
+      line-height: 1; margin-bottom: 5px;
+    }
+    .abt-doc-stat span { font-size: 13px; color:#5c5b5c}
+ 
+    .abt-doc-tags {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px;
+    }
+    .abt-doc-tags span {
+      font-size: 12px; font-weight: 600;
+      color: rgba(78, 78, 77, 0.78);
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(32, 32, 32, 0.13);
+      padding: 5px 14px; border-radius: 100px;
+    }
+ 
+    .abt-credentials {
+      list-style: none; display: flex; flex-direction: column; gap: 12px;
+    }
+    .abt-credentials li {
+      display: flex; align-items: flex-start; gap: 12px;
+      font-size: 14px; color: rgba(42, 41, 41, 0.745); line-height: 1.55;
+    }
+    .abt-credentials li .cred-dot {
+      width: 28px; height: 28px; border-radius: 8px; flex-shrink: 0;
+      background: rgba(201,162,75,.15);
+      border: 1px solid rgba(201,162,75,.25);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; margin-top: 1px;
+    }
+ 
+    /* ════════════════════════════════
+       WHY CHOOSE US STRIP
+    ════════════════════════════════ */
+    .abt-why { padding: 88px 0; background: var(--paper); }
+    .abt-why-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+    }
+    .abt-why-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 32px 26px 36px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      transition: transform .3s, box-shadow .3s;
+      text-align: center;
+    }
+    .abt-why-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+    .abt-why-icon {
+      width: 60px; height: 60px; border-radius: 18px;
+      background: linear-gradient(135deg, var(--panel), var(--teal));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 26px; margin: 0 auto 18px;
+    }
+    .abt-why-card h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 16px; font-weight: 700; color: var(--ink);
+      margin-bottom: 8px; letter-spacing: -.01em;
+    }
+    .abt-why-card p { font-size: 13.5px; color: var(--muted); line-height: 1.65; }
+ 
+    /* ════════════════════════════════
+       CTA STRIP
+    ════════════════════════════════ */
+    .abt-cta {
+      background: linear-gradient(135deg, var(--panel), #0A1E1B);
+      padding: 72px 0; text-align: center; position: relative; overflow: hidden;
+    }
+    .abt-cta::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(201,162,75,.08), transparent 70%);
+    }
+    .abt-cta h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 32px; font-weight: 700; color: var(--white);
+      margin-bottom: 12px; letter-spacing: -.01em;
+    }
+    .abt-cta p { font-size: 16px; color: rgba(244,241,233,.58); margin-bottom: 32px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .abt-btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--brass); color: var(--ink);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 15px; font-weight: 700;
+      padding: 14px 34px; border-radius: 100px;
+      text-decoration: none; transition: background .2s, transform .2s;
+    }
+    .abt-btn:hover { background: var(--brass-lt); transform: translateY(-2px); }
+    .abt-btn-outline {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: transparent; color: var(--white);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 15px; font-weight: 600;
+      padding: 14px 34px; border-radius: 100px;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.22);
+      transition: border-color .2s, transform .2s;
+      margin-left: 12px;
+    }
+    .abt-btn-outline:hover { border-color: rgba(255,255,255,.55); transform: translateY(-2px); }
+ 
+    /* ── REVEAL ── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: .10s; }
+    .reveal-delay-2 { transition-delay: .20s; }
+    .reveal-delay-3 { transition-delay: .30s; }
+ 
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .abt-doctor-split { grid-template-columns: 340px 1fr; gap: 52px; }
+    }
+    @media (max-width: 880px) {
+      .abt-split { grid-template-columns: 1fr; gap: 52px; }
+      .abt-split.reverse { direction: ltr; }
+      .abt-doctor-split { grid-template-columns: 1fr; gap: 56px; }
+      .abt-img-floatcard { left: 16px; bottom: 16px; }
+      .abt-img-accent { right: -16px; bottom: -16px; }
+      .abt-doc-cred-card { position: static; transform: none; margin: 24px auto 0; display: inline-block; left: auto; }
+      .abt-doc-photo-wrap { text-align: center; }
+      .abt-why-grid { grid-template-columns: repeat(2, 1fr); }
+      .abt-hero-stats { gap: 28px; }
+    }
+    @media (max-width: 560px) {
+      .abt-why-grid { grid-template-columns: 1fr; }
+      .abt-pillars { grid-template-columns: 1fr; }
+      .abt-doc-stats { grid-template-columns: repeat(2, 1fr); }
+      .abt-hero-stats { gap: 18px; }
+      .abt-hero-stat strong { font-size: 26px; }
+      .abt-btn-outline { margin-left: 0; margin-top: 10px; }
+    }
