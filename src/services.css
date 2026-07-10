@@ -295,6 +295,11 @@
 .np-cond-wide2 {
   grid-column: span 2;
 }
+
+/* Full width card - spans all 3 columns */
+.np-cond-full {
+  grid-column: span 3;
+}
  
 /* ── Hover border glow ── */
 .np-cond-card::after {
@@ -322,7 +327,8 @@
     grid-auto-rows: 210px;
   }
   .np-cond-wide,
-  .np-cond-wide2 {
+  .np-cond-wide2,
+  .np-cond-full {
     grid-column: span 2;
   }
   .np-cond-tall,
@@ -338,6 +344,7 @@
   }
   .np-cond-wide,
   .np-cond-wide2,
+  .np-cond-full,
   .np-cond-tall,
   .np-cond-tall2 {
     grid-column: span 1;

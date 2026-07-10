@@ -340,6 +340,9 @@ export default function NegiPhysiotherapy() {
               sports rehabilitation, spinal care, and advanced pain management techniques. His patient-first approach 
               focuses on identifying the root cause of pain and creating personalized recovery plans that deliver lasting results.
             </p>
+            <p className="physio-desc">
+              <strong>Specialist in total knee or hip replacement rehab program or prehab exercises protocol.</strong>
+            </p>
             <hr className="physio-divider" />
             <ul className="physio-stats">
               <li><strong>15+ Years</strong> <span>Experience</span></li>

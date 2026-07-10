@@ -786,6 +786,15 @@ export default function ServicesPage() {
               <span className="np-cond-name">Spinal Surgeries</span>
             </div>
           </div>
+
+          {/* Card 15 — Rotator Cuff Injury (full width) */}
+          <div className="np-cond-card np-cond-full" data-delay="14">
+            <img src={imageSrc('rotater-cuff-injury.png')} alt="Rotator Cuff Injury" className="np-cond-img" />
+            <div className="np-cond-overlay"></div>
+            <div className="np-cond-info">
+              <span className="np-cond-name">Rotator Cuff Injury</span>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -256,13 +256,7 @@ export default function AboutPage() {
                 <div className="abt-img-accent">
                   <img src={imageSrc('clinic-photo-2.webp')} alt="Advanced treatment equipment" />
                 </div>
-                <div className="abt-img-floatcard">
-                  <div className="abt-floatcard-icon brass">🏆</div>
-                  <div className="abt-floatcard-text">
-                    <strong>CE Certified</strong>
-                    <span>Class IV Laser · Exclusive in Kotdwar</span>
-                  </div>
-                </div>
+             
               </div>
 
               {/* Text side */}
@@ -409,6 +403,12 @@ export default function AboutPage() {
                     <span>
                       Highly rated across Google Reviews for patient outcomes, clear
                       communication, and genuine commitment to recovery
+                    </span>
+                  </li>
+                  <li>
+                    <span className="cred-dot">👩🏻‍⚕️</span>
+                    <span>
+                       Secialist in total knee or hip replacement rehab program or prehab exercises protocol
                     </span>
                   </li>
                 </ul>
