@@ -354,7 +354,7 @@ export default function AboutPage() {
                     <span>Years of clinical experience</span>
                   </div>
                   <div className="abt-doc-stat">
-                    <strong>5000+</strong>
+                    <strong>40,000+</strong>
                     <span>Patients successfully treated</span>
                   </div>
                   <div className="abt-doc-stat">
