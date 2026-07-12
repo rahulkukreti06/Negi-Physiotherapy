@@ -834,7 +834,7 @@ export default function ServicesPage() {
                 </span>
 
                 <span>
-                  <a href="tel:+918219652502">+91 82196 52502</a>
+                  <a href="tel:+918218652502">+91 82186 52502</a>
                   <br />
                   <a href="tel:+919719604206">+91 97196 04206</a>
                 </span>
