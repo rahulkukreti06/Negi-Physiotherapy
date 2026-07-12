@@ -378,7 +378,7 @@ export default function BlogPage() {
                 </span>
 
                 <span>
-                  <a href="tel:+918219652502">+91 82196 52502</a>
+                  <a href="tel:+918218652502">+91 82186 52502</a>
                   <br />
                   <a href="tel:+919719604206">+91 97196 04206</a>
                 </span>
@@ -452,7 +452,7 @@ export default function BlogPage() {
           </svg>
         </button>
         <a
-          href="https://wa.me/918219652502"
+          href="https://wa.me/918218652502"
           className="whatsapp-btn"
           target="_blank"
           rel="noopener noreferrer"

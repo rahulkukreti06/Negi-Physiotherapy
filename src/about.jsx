@@ -408,7 +408,7 @@ export default function AboutPage() {
                   <li>
                     <span className="cred-dot">👩🏻‍⚕️</span>
                     <span>
-                       Secialist in total knee or hip replacement rehab program or prehab exercises protocol
+                       Specialist in total knee or hip replacement rehab program or prehab exercises protocol
                     </span>
                   </li>
                 </ul>
@@ -642,7 +642,7 @@ export default function AboutPage() {
                 </span>
 
                 <span>
-                  <a href="tel:+918219652502">+91 82196 52502</a>
+                  <a href="tel:+918218652502">+91 82186 52502</a>
                   <br />
                   <a href="tel:+919719604206">+91 97196 04206</a>
                 </span>
@@ -716,7 +716,7 @@ export default function AboutPage() {
           </svg>
         </button>
         <a
-          href="https://wa.me/918219652502"
+          href="https://wa.me/918218652502"
           className="whatsapp-btn"
           target="_blank"
           rel="noopener noreferrer"

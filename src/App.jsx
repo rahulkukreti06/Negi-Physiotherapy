@@ -525,8 +525,8 @@ export default function NegiPhysiotherapy() {
             </p>
             <div className="np-hero__cta-row">
               <a href="#book" className="np-btn np-btn--primary">Book Appointment</a>
-              <a href="tel:918219652502" className="np-btn np-btn--ghost">Call Now</a>
-              <a href="https://wa.me/918219652502" target="_blank" rel="noreferrer" className="np-btn np-btn--outline">WhatsApp Now</a>
+              <a href="tel:918218652502" className="np-btn np-btn--ghost">Call Now</a>
+              <a href="https://wa.me/918218652502" target="_blank" rel="noreferrer" className="np-btn np-btn--outline">WhatsApp Now</a>
             </div>
           </div>
 
@@ -582,7 +582,7 @@ export default function NegiPhysiotherapy() {
                 </span>
 
                 <span>
-                  <a href="tel:+918219652502">+91 82196 52502</a>
+                  <a href="tel:+918218652502">+91 82186 52502</a>
                   <br />
                   <a href="tel:+919719604206">+91 97196 04206</a>
                 </span>
@@ -656,7 +656,7 @@ export default function NegiPhysiotherapy() {
           </svg>
         </button>
         <a
-          href="https://wa.me/918219652502"
+          href="https://wa.me/918218652502"
           className="whatsapp-btn"
           target="_blank"
           rel="noopener noreferrer"

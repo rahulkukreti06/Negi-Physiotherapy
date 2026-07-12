@@ -908,7 +908,7 @@ export default function ServicesPage() {
           </svg>
         </button>
         <a
-          href="https://wa.me/918219652502"
+          href="https://wa.me/918218652502"
           className="whatsapp-btn"
           target="_blank"
           rel="noopener noreferrer"
