@@ -823,7 +823,7 @@ export default function ServicesPage() {
                   </svg>
                 </span>
 
-                <span>Malviya Udhyan, Near Nagar Nigam Office, Kotdwara, Uttarakhand 246149</span>
+                <span>Malviya Udhyan, Near Nagar Nigam Office, nainital bank, Kotdwara, Uttarakhand 246149</span>
               </li>
 
               <li>
