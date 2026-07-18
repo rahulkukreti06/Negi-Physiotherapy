@@ -221,7 +221,7 @@ export default function BlogPage() {
             </div>
             <div className="blog-hero-stat-divider"></div>
             <div className="blog-hero-stat">
-              <span className="blog-hero-stat-number">5000+</span>
+              <span className="blog-hero-stat-number">40,000+</span>
               <span className="blog-hero-stat-label">Patients Treated</span>
             </div>
             <div className="blog-hero-stat-divider"></div>
